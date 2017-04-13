@@ -1,0 +1,131 @@
+\name{SeerMapper2010Regs-package}
+\alias{SeerMapper2010Regs-package}
+\docType{package}
+\title{\var{SeerMapper}-Supplemental 2010 Census Tract boundary datasets 
+  for states with Seer Registries}
+\description{
+ The \var{SeerMapper2010Regs} package provides supplemental 2010 Census Tract boundary 
+ datasets for 15 states containingg Seer Registries for use with 
+ \var{SeerMapper} package.  
+ 
+ The \var{SeerMapper2010West} supplemental data package contains the 2010 census 
+ tract boundary dataset for 14 states west of the Mississippi river 
+ that do not contain NCI Seer Registries. The \var{SeerMapper2010East} 
+ data obly package contains the 2010 census tract boundary datasets 
+ for 21 states, District of Columbia and Puerto Rico that do not have 
+ Seer Registries and are east of the Mississippi river.
+ 
+ By loading these packages (via the library function) expands 
+ the \var{SeerMapper} package abilities to map census tract level 
+ data in any of the 50 states, the District of Columbia and Puerto 
+ Rico.
+}
+\details{
+    \tabular{ll}{
+      Package:  \tab SeerMapper2010Regs\cr
+      Type:     \tab Package\cr
+      Version:  \tab 1.2.0\cr
+      Date:     \tab 2017-04-13\cr
+      License:  \tab GPL-2\cr
+      LazyLoad: \tab no\cr
+    } 
+
+No special action is required by the user to install this package or 
+load it when running \var{SeerMapper2010} function in the \var{SeerMapper} 
+package. The defined interdependencies of the packages automatically install the 
+supplemental census tract boundary packages when \var{SeerMapper} is install.
+When the \var{SeerMapper2010} function is called, it sets the census year to "2010" 
+to instruct \var{SeerMapper} to use the 2010 boundaries and related information 
+to map the data.
+\preformatted{  
+  library(SeerMapper)
+  
+  rateDate <- data.frame(FIBS=stateFibs, 
+                         Rate=stateRateVector, 
+                         pValue=stateRatePValue)
+  
+  SeerMapper2010(rateData, Title=c("Test Map"))
+ }
+
+If the package attachment or dataset load fails, the caller is 
+notified of the problem and mapping is terminated.  
+
+The \var{SeerMapper2010Regs} package contains the 2010 census tract 
+boundary datasets for:
+\preformatted{
+    FIPS   Name        # of Registries
+     02     Alaska      1
+     04     Arizona     1
+     06     California  4
+     09     Connecticut 1
+     13     Georgia     3
+     15	    Hawaii      1
+     19     Iowa        1
+     21     Kentucky    1
+     22     Louisiana   1
+     26     Michigan    1
+     34     New Jersey  1
+     35     New Mexico  1
+     40     Oklahoma    1
+     49     Utah        1
+     53     Washington  1            
+}
+
+The \var{SeerMapper2010East} package contains the 2010 census tract 
+boundary datasets for:
+\preformatted{
+    FIPS   Name
+     01     Alabama
+     10     Delaware
+     11	    District of Columbia
+     12	    Florida
+     17	    Illinois
+     18	    Indiana
+     23     Maine
+     24     Maryland
+     25     Massachusetts
+     28	    Mississippi
+     33	    New Hampshire
+     36	    New York
+     37	    North Carolina
+     39	    Ohio
+     42     Pennsylvania
+     44	    Rhode Island
+     45	    South Carolina
+     47	    Tennessee
+     50	    Vermont
+     51	    Virginia
+     54     West Virginia
+     55	    Wisconsin
+     72	    Puerto Rico
+  }
+
+The \var{SeerMapper2010West} package contains the 2010 census tract 
+boundary datasets for:
+\preformatted{
+    FIPS   Name
+     08     Colorado
+     16     Idaho
+     20     Kansas
+     17     Illinois
+     18     Indiana
+     30     Montana
+     38     North Dakota
+     31     Nebraska
+     32     Nevada
+     39     Ohio
+     41     Oregon
+     46     South Dakota
+     48     Texas
+     55     Wisconsin
+     56     Wyoming
+  }
+}  
+\author{
+Jim Pearson \email{jpearson@statnetconsulting.com} with data sourced from 
+   U. S. Census Bureau \email{geo.tiger@census.gov}\cr 
+Maintainer: "Jim Pearson" \email{jpearson@statnetconsulting.com}\cr 
+Package compiled by "Jim Pearson" \email{jpearson@statnetconsulting.com}
+}
+
+

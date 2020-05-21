@@ -5,27 +5,27 @@
   for states with Seer Registries}
 \description{
  The \var{SeerMapper2010Regs} package provides supplemental 2010 Census Tract boundary 
- datasets for 15 states containingg Seer Registries for use with 
+ datasets for 19 states containing Seer Registries for use with 
  \var{SeerMapper} package.  
  
  The \var{SeerMapper2010West} supplemental data package contains the 2010 census 
- tract boundary dataset for 14 states west of the Mississippi river 
+ tract boundary dataset for 13 states west of the Mississippi river 
  that do not contain NCI Seer Registries. The \var{SeerMapper2010East} 
- data obly package contains the 2010 census tract boundary datasets 
- for 21 states, District of Columbia and Puerto Rico that do not have 
+ data only package contains the 2010 census tract boundary datasets 
+ for 20 states, District of Columbia and Puerto Rico that do not have 
  Seer Registries and are east of the Mississippi river.
  
  By loading these packages (via the library function) expands 
  the \var{SeerMapper} package abilities to map census tract level 
- data in any of the 50 states, the District of Columbia and Puerto 
+ data in any of the 52 states, the District of Columbia and Puerto 
  Rico.
 }
 \details{
     \tabular{ll}{
       Package:  \tab SeerMapper2010Regs\cr
       Type:     \tab Package\cr
-      Version:  \tab 1.2.0\cr
-      Date:     \tab 2017-04-13\cr
+      Version:  \tab 1.2.2\cr
+      Date:     \tab 2019-07-23\cr
       License:  \tab GPL-2\cr
       LazyLoad: \tab no\cr
     } 
@@ -60,15 +60,19 @@ boundary datasets for:
      09     Connecticut 1
      13     Georgia     3
      15	    Hawaii      1
+     16     Idaho       1
      19     Iowa        1
      21     Kentucky    1
      22     Louisiana   1
+     25     Massachusetts 1
      26     Michigan    1
      34     New Jersey  1
      35     New Mexico  1
+     36     New York    1
      40     Oklahoma    1
      49     Utah        1
      53     Washington  1            
+     55     Wisconsin   1
 }
 
 The \var{SeerMapper2010East} package contains the 2010 census tract 
@@ -83,10 +87,8 @@ boundary datasets for:
      18	    Indiana
      23     Maine
      24     Maryland
-     25     Massachusetts
      28	    Mississippi
      33	    New Hampshire
-     36	    New York
      37	    North Carolina
      39	    Ohio
      42     Pennsylvania
@@ -96,7 +98,6 @@ boundary datasets for:
      50	    Vermont
      51	    Virginia
      54     West Virginia
-     55	    Wisconsin
      72	    Puerto Rico
   }
 
@@ -104,28 +105,26 @@ The \var{SeerMapper2010West} package contains the 2010 census tract
 boundary datasets for:
 \preformatted{
     FIPS   Name
+     05     Arkansas
      08     Colorado
-     16     Idaho
      20     Kansas
-     17     Illinois
-     18     Indiana
+     27     Minnesota
+     29     Missouri
      30     Montana
-     38     North Dakota
      31     Nebraska
-     32     Nevada
-     39     Ohio
+     32     Neveda
+     38     North Dakota
      41     Oregon
      46     South Dakota
      48     Texas
-     55     Wisconsin
      56     Wyoming
   }
 }  
 \author{
-Jim Pearson \email{jpearson@statnetconsulting.com} with data sourced from 
+Jim Pearson \email{jpearson0525@gmail.com} with data sourced from 
    U. S. Census Bureau \email{geo.tiger@census.gov}\cr 
-Maintainer: "Jim Pearson" \email{jpearson@statnetconsulting.com}\cr 
-Package compiled by "Jim Pearson" \email{jpearson@statnetconsulting.com}
+Maintainer: "Jim Pearson" \email{jpearson0525@gmail.com}\cr 
+Package compiled by "Jim Pearson" \email{jpearson0525@gmail.com}
 }
 
 

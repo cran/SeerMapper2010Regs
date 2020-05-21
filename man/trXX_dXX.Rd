@@ -8,19 +8,23 @@
 \alias{tr09_d10}
 \alias{tr13_d10}
 \alias{tr15_d10}
+\alias{tr16_d10}
 \alias{tr19_d10}
 \alias{tr21_d10}
 \alias{tr22_d10}
+\alias{tr25_d10}
 \alias{tr26_d10}
 \alias{tr34_d10}
 \alias{tr35_d10}
+\alias{tr36_d10}
 \alias{tr40_d10}
 \alias{tr49_d10}
 \alias{tr53_d10}
+\alias{tr55_d10}
 
 \docType{data}
 \title{
-   Provides the U.S. 2010 Census Tract Boundary data datasets for 15 States 
+   Provides the U.S. 2010 Census Tract Boundary data datasets for 19 States 
    the have Seer Registries for use with 
    \var{SeerMapper} Package
 }
@@ -32,21 +36,22 @@
  The combination of the either three provide a 
  set of census tract boundaries for one U. S. census year (either 2000 or 2010).
  The \var{SeerMapperRegs} and \var{Seer2010MapperRegs} packages contains 
- the census tract boundaries for the 15 states the have U. S. Seer Registries.
+ the census tract boundaries for the 19 states the have U. S. Seer Registries.
  The remaining census tract boundaries are split into two packages 
  for each census year based on whether the state is east or west of the 
- Mississippi river.  The census tracts for 23 states without registries east 
+ Mississippi river.  The census tracts for 20 states, district and territory 
+ without registries east 
  of the Mississippi river at contained in the \var{SeerMapperEast} 
  and \var{Seer2010MapperEast} packages.  
- The tract boundaries for the 14 states west of the Mississippi river are 
+ The tract boundaries for the 13 states west of the Mississippi river are 
  in the \var{SeerMapperWest} and \var{Seer2010MapperWest} packages.  
  The states include the District of Columbia and Puerto Rico.
- This package contains the 2010 census tract boundaries for the 15 states 
+ This package contains the 2010 census tract boundaries for the 19 states 
  with Seer Registries.
  }
 \usage{data(tr02_d10)}
 \format{
- This dataset contains a set of SpatialPolygons structures for the 15 states
+ This dataset contains a set of SpatialPolygons structures for the 19 states
  with Seer Registries.
  Each state structure is a list of the census tracts boundaries that 
  the state. Refer to the documentation on the \var{sp} package for 
@@ -57,7 +62,7 @@
 }
 \details{
  The \var{SeerMapperRegs} and \var{SeerMapper2010Regs} packages contains 
- 15 states with Seer Registries including:
+ 19 states with Seer Registries including:
  \preformatted{
     FIPS   Name
      02     Alaska
@@ -66,19 +71,23 @@
      09	    Connecticut
      13     Georgia
      15     Hawaii
+     16     Idaho
      19	    Iowa
      21     Kentucky
      22     Louisiana
+     25     Massachusett
      26     Michigan
      34     New Jersery
      35     New Mexico
+     36     New York
      40     Oklahoma
      49	    Utah 
      53     Washington
+     55     Wisconsin 
   }
  The \var{SeerMapper} package contains the state and county boundary
  data for all 51 states and DC and the Seer Registry boundary data for
- the 20 established registries.  Due to space limitations, the base
+ the 24 established registries.  Due to space limitations, the base
  packages cannot contain the census tract boundary data.
  
  Three supplemental data packages are used for each census year to 
@@ -127,11 +136,13 @@
   cat("Output Directory used:",outDir,"\n")
   
   stList    <- c("02","04","06","09","13",
-                 "15","19","21","22","26",
-                 "34","35","40","49","53")
+                 "15","16","19","21","22",
+                 "25","26","34","35","36",
+                 "40","49","53","55")
   stName    <- c("Alaska","Arizona","California","Connecticut","Georgia",
-                 "Hawaii","Iowa","Kentucky","Louisiana","Michigan",
-                 "New Jersery","New Mexico","Oklahoma","Utah","Washington")
+                 "Hawaii","Idaho","Iowa","Kentucky","Louisiana",
+                 "Massachusett","Michigan","New Jersery","New Mexico","New York",
+                 "Oklahoma","Utah","Washington","Wisconsin")
   cY        <- "10"
 
   outFile   <- paste0("SeerMapperRegs",cY,"-CT.pdf")
@@ -140,7 +151,7 @@
 
   pdf(outFN,width=7,height=10)
 
-  for (stN in seq(from=1, to=length(stList), by=7)) {   # test draw 3 of 15 states
+  for (stN in seq(from=1, to=length(stList), by=7)) {   # test draw 3 of 19 states
 
      stID   <- stList[stN]
      stNa   <- stName[stN]

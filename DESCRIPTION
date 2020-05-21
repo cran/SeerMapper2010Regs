@@ -1,25 +1,24 @@
 Package: SeerMapper2010Regs
 Type: Package
-Version: 1.2.0
-Date: 2017-04-13
-Title: Supplemental U. S. 2010 Census Tract Boundaries for 15 States
+Version: 1.2.2
+Date: 2020-5-20
+Title: Supplemental U.S. 2010 Census Tract Boundaries for 19 States
         with Seer Registries for 'SeerMapper'
-Author: "Jim Pearson" <jpearson@statnetconsulting.com> 
-  with data provided by "U. S. Census Bureau" <geo.tiger@census.gov>
-Maintainer: "Jim Pearson" <jpearson@statnetconsulting.com>
-Depends: R (>= 3.2.0)
+Author: Jim Pearson with data provided by U.S. Census Bureau
+Maintainer: Fanni Zhang <zhangf@imsweb.com>
+Depends: R (>= 3.6.0)
 Imports: sp
 Suggests:
-Description: Provides  supplemental 2010 census tract boundaries of the 15 states 
+Description: Provides supplemental 2010 census tract boundaries of the 19 states 
    containing Seer Registries for use with the 'SeerMapper' package.
    The data contained in this 
-   package is derived from U. S. 2010 Census data and is in public domain. 
+   package is derived from U.S. 2010 Census data and is in public domain. 
 License: GPL (>= 2)
 LazyData: no
 LazyLoad: no
 BuildResaveData: yes
 ByteCompile: yes
 NeedsCompilation: no
-Packaged: 2017-04-13 00:28:07 UTC; jpearson
+Packaged: 2020-05-20 17:46:23 UTC; zhangf10
 Repository: CRAN
-Date/Publication: 2017-04-13 21:27:26 UTC
+Date/Publication: 2020-05-21 05:10:23 UTC

@@ -1,15 +1,17 @@
-SeerMapper2010East - Release 1.2.0 - April 12, 2017
+SeerMapper2010Regs - Release 1.2.0 - April 12, 2017
 
-Initial release of SeerMapper2010East supplemental U. S. 2010 census 
+Initial release of SeerMapper2010Regs supplemental U. S. 2010 census 
 tract boundary data for use with the SeerMapper package.  This 
-package contains the U. S. 2010 census tract boundaries for any 
-state east of the Mississippi River that does not contain 
-a U. S. Seer.
+package contains the U. S. 2010 census tract boundaries for 
+States with Seer Registries for 'SeerMapper'.
 
-Release 1.2.2 - July 23, 2019
+Release 1.2.2 - June 8, 2020
 
-Moved the census tract data for NY, MA, ID, and WI 
-from the East and West boundary packages to the Regs package.
+Moved the census tract data for NY, MA, ID, IO, and WI from the East and West boundary packages to the Regs package.
+
+Release 1.2.3 - June 17, 2020
+
+Modified the documentation.
 
 
 
